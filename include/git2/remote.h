@@ -73,15 +73,15 @@ GIT_EXTERN(int) git_remote_create_with_fetchspec(
  *
  * @param out pointer to the new remote object
  * @param repo the associated repository
- * @param fetch the fetch refspec to use for this remote.
  * @param url the remote repository's URL
+ * @param fetch the fetch refspec to use for this remote.
  * @return 0 or an error code
  */
 GIT_EXTERN(int) git_remote_create_inmemory(
 		git_remote **out,
 		git_repository *repo,
-		const char *fetch,
-		const char *url);
+		const char *url,
+		const char *fetch);
 
 /**
  * Get the information for a particular remote
